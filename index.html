@@ -44,8 +44,11 @@
         
         .hero {
             text-align: center;
-            padding: 45px 40px 35px;
-            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(193, 150, 96, 0.20) 50%, rgba(176, 135, 82, 0.15) 100%);
+            padding: 60px 40px 50px;
+            background: linear-gradient(135deg, 
+                rgba(212, 165, 116, 0.15) 0%, 
+                rgba(193, 150, 96, 0.20) 50%, 
+                rgba(176, 135, 82, 0.15) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -265,13 +268,13 @@
         .about-me {
             background: linear-gradient(135deg, #faf8f5 0%, #f6f2ee 100%);
             border-radius: 15px;
-            padding: 25px;
+            padding: 30px;
             border-right: 6px solid #a67c5a;
-            box-shadow: 0 8px 25px rgba(139, 105, 81, 0.15);
+            box-shadow: 0 8px 30px rgba(139, 105, 81, 0.15);
             display: flex;
-            gap: 25px;
+            gap: 30px;
             align-items: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         
         .profile-image {
@@ -306,40 +309,40 @@
         
         .about-text {
             flex: 1;
-            font-size: 1em;
-            line-height: 1.6;
+            font-size: 1.05em;
+            line-height: 1.7;
             color: #3a2e26;
             text-align: justify;
             font-weight: 500;
         }
         
         .section-text {
-            font-size: 1em;
-            line-height: 1.6;
+            font-size: 1.05em;
+            line-height: 1.7;
             color: #3a2e26;
             text-align: justify;
             font-weight: 500;
             background: linear-gradient(135deg, #faf8f5 0%, #f6f2ee 100%);
-            padding: 25px;
+            padding: 30px;
             border-radius: 15px;
             border-right: 6px solid #b08752;
-            box-shadow: 0 8px 25px rgba(139, 105, 81, 0.15);
+            box-shadow: 0 8px 30px rgba(139, 105, 81, 0.15);
         }
         
         .services {
             background: linear-gradient(135deg, #fdfcf8 0%, #f5f0e8 100%);
-            padding: 25px;
+            padding: 30px;
             border-radius: 15px;
             margin-top: 20px;
             box-shadow: 0 8px 30px rgba(139, 105, 81, 0.1);
         }
         
         .service-item {
-            margin-bottom: 20px;
-            padding: 20px;
+            margin-bottom: 25px;
+            padding: 25px;
             background: white;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(139, 105, 81, 0.12);
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(139, 105, 81, 0.12);
             border-right: 5px solid #a67c5a;
             transition: all 0.3s ease;
             position: relative;
@@ -361,68 +364,87 @@
         }
         
         .service-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 35px rgba(139, 105, 81, 0.18);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(139, 105, 81, 0.2);
         }
         
         .service-title {
-            font-size: 1.25em;
+            font-size: 1.4em;
             font-weight: 700;
             color: #8b6951;
             margin-bottom: 8px;
             line-height: 1.3;
-            text-shadow: 0 1px 3px rgba(139, 105, 81, 0.1);
         }
         
         .service-subtitle {
-            font-size: 1em;
+            font-size: 1.1em;
             color: #a67c5a;
             font-weight: 500;
             font-style: italic;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             line-height: 1.3;
         }
         
         .service-description {
-            font-size: 0.95em;
-            line-height: 1.5;
+            font-size: 1em;
+            line-height: 1.6;
             color: #3a2e26;
             text-align: justify;
             font-weight: 500;
         }
         
-        .contact-info {
+        .contact-section {
             background: linear-gradient(135deg, #8b6951 0%, #a67c5a 50%, #b08752 100%);
             color: white;
-            padding: 15px 30px;
+            padding: 30px 40px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            margin: 50px -40px 0;
+            border-radius: 0 0 20px 20px;
         }
         
-        .contact-info::before {
+        .contact-section::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.08) 50%, transparent 70%);
+            background: linear-gradient(45deg, 
+                transparent 30%, 
+                rgba(255, 255, 255, 0.08) 50%, 
+                transparent 70%);
             pointer-events: none;
         }
         
+        .contact-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(255, 255, 255, 0.4) 50%, 
+                transparent 100%);
+        }
+        
         .contact-title {
-            font-size: 1.2em;
+            font-size: 1.8em;
             font-weight: 800;
-            margin-bottom: 0;
-            display: inline;
-            margin-left: 20px;
+            margin-bottom: 15px;
+            text-shadow: 
+                0 3px 10px rgba(0,0,0,0.4),
+                0 1px 3px rgba(0,0,0,0.3);
+            display: block;
         }
         
         .contact-info-text {
-            font-size: 1em;
-            line-height: 1.2;
-            display: inline;
+            font-size: 1.1em;
+            line-height: 1.4;
+            display: block;
             font-weight: 500;
             position: relative;
             z-index: 1;
@@ -434,55 +456,55 @@
             margin: 0 12px;
         }
         
-            @media (max-width: 768px) {
-                .container {
-                    margin: 10px;
-                    border-radius: 15px;
-                }
-                
-                .main-title {
-                    font-size: 2.5em;
-                }
-                
-                .subtitle {
-                    font-size: 1.5em;
-                }
-                
-                .intro-text {
-                    font-size: 1em;
-                    padding: 20px;
-                }
-                
-                .nav-buttons {
-                    gap: 8px;
-                    flex-wrap: wrap;
-                }
-                
-                .nav-btn {
-                    padding: 12px 18px;
-                    font-size: 0.9em;
-                }
-                
-                .about-me {
-                    flex-direction: column;
-                    text-align: center;
-                }
-                
-                .profile-image {
-                    width: 150px;
-                    height: 150px;
-                }
-                
-                .content, .navigation, .hero {
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-                
-                .contact-info-text {
-                    white-space: normal;
-                    line-height: 1.5;
-                }
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
             }
+            
+            .main-title {
+                font-size: 2.5em;
+            }
+            
+            .subtitle {
+                font-size: 1.5em;
+            }
+            
+            .intro-text {
+                font-size: 1em;
+                padding: 20px;
+            }
+            
+            .nav-buttons {
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            
+            .nav-btn {
+                padding: 12px 18px;
+                font-size: 0.9em;
+            }
+            
+            .about-me {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .content, .navigation, .hero {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            
+            .contact-info-text {
+                white-space: normal;
+                line-height: 1.5;
+            }
+        }
     </style>
 </head>
 <body>
@@ -493,7 +515,7 @@
             <div class="main-title">בין המילים</div>
             <div class="subtitle">טקסטים מחוללי משמעות</div>
             <div class="intro-text">
-                טקסטים הם יותר מאשר רק מקורות ידע. הם מסוגלים לעורר הבנה עצמית עמוקה, להוליד דיאלוג אמיתי בין אנשים ולהעניק חוסן ומשמעות לאדם ולקהילה. בעבודתי, אני מייצר מרחבי שיח ולימוד בית מדרשיים שבהם טקסטים יהודיים וישראליים משמשים כזרז לتהליכי צמיחה והתחדשות אישיים וקבוצתיים מתוך עיסוק בשאלות הנוגעות לחיינו
+                טקסטים הם יותר מאשר רק מקורות ידע. הם מסוגלים לעורר הבנה עצמית עמוקה, להוליד דיאלוג אמיתי בין אנשים ולהעניק חוסן ומשמעות לאדם ולקהילה. בעבודתי, אני מייצר מרחבי שיח ולימוד בית מדרשיים שבהם טקסטים יהודיים וישראליים משמשים כזרז לתהליכי צמיחה והתחדשות אישיים וקבוצתיים מתוך עיסוק בשאלות הנוגעות לחיינו
             </div>
         </div>
 
@@ -569,10 +591,10 @@
             </section>
 
             <section id="contact" class="section">
-                <div class="contact-info">
+                <div class="contact-section">
                     <h3 class="contact-title">פרטי קשר</h3>
                     <div class="contact-info-text">
-                        טלפון – 052-7430426<span class="contact-divider">|</span>אימייל – shimon1israeli@gmail.com<span class="contact-divider">|</span>נתיבות
+                        טלפון: 052-7430426<span class="contact-divider">|</span>אימייל: shimon1israeli@gmail.com<span class="contact-divider">|</span>נתיבות
                     </div>
                 </div>
             </section>
